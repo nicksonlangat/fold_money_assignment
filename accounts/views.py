@@ -1,14 +1,13 @@
 from django.contrib.auth import get_user_model
 from rest_framework import mixins, viewsets, status
 from rest_framework.response import Response
-from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.permissions import AllowAny
 from rest_framework.views import APIView
 from rest_framework import exceptions
 from .utils import get_tokens_for_user
 from . import serializers
 
 class UserListView(mixins.ListModelMixin,mixins.RetrieveModelMixin, viewsets.GenericViewSet):
-    permission_classes = [IsAuthenticated]
     queryset = get_user_model().objects.all()
     serializer_class = serializers.UserSerializer
 
