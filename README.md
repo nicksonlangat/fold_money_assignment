@@ -49,9 +49,13 @@ DB_HOST="localhost"
 - Search app is `search`
 
 ## Search Endpoints
-- Search for projects created by a particular user via (http://localhost:8000/search/project/user/<query>/)
-- Search for projects that use specific hashtags via (http://localhost:8000/search/project/hashtag/<query>/)
-- Full-text fuzzy search for projects via (http://localhost:8000/search/project/slug/<query>/)
+- Search for projects created by a particular user via (http://localhost:8000/search/project/user/query/)
+- Search for projects that use specific hashtags via (http://localhost:8000/search/project/hashtag/query/)
+- Full-text fuzzy search for projects via (http://localhost:8000/search/project/query/)
 
 ## Running tests
 - Tests can be run by using  `python manage.py test `
+ 
+## Video
+- https://mega.nz/file/TR42AbJa#DQUoOQV3TlVzPf-OqlRuzMf--QnNl_m8cOr7Sd3ruDM
+  
