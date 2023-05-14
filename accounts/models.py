@@ -27,6 +27,7 @@ class UserAccountManager(UserManager):
 class UserAccount(AbstractUser):
     username = None
     email = models.EmailField(unique=True)
+    name = models.CharField(max_length=250)
     USERNAME_FIELD = 'email'
 
 
@@ -36,4 +37,3 @@ class UserAccount(AbstractUser):
 
     class Meta:
         ordering = ['-date_joined']
-
